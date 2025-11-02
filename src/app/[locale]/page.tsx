@@ -1,7 +1,8 @@
 import Link from "next/link";
-import initTranslations from "../i18n";
+import initTranslations from "../i18n/i18n";
+import Employee from "./about/page";
 
-type PageProps = {
+export type PageProps = {
   params: {
     locale: string;
   };
@@ -16,6 +17,7 @@ export default async function Home({ params: { locale } }: PageProps) {
         <Link className="underline" href={"/about"}>
           {t("about_text")}
         </Link>
+        <Employee />
       </main>
     </div>
   );
