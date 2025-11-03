@@ -1,24 +1,3 @@
-// import { i18n, Resource } from "i18next";
-// import { initI18n } from "./client";
-
-// export default async function initTranslations(
-//   locale: string,
-//   namespaces: string[],
-//   i18nInstance?: i18n,
-//   resources?: Resource
-// ): Promise<{
-//   i18n: i18n;
-//   t: i18n["t"];
-//   resources: Record<string, Resource[string]>;
-// }> {
-//   const instance = await initI18n(locale, namespaces, i18nInstance, resources);
-//   return {
-//     i18n: instance,
-//     t: instance.t.bind(instance),
-//     resources: { [locale]: instance.services.resourceStore.data[locale] },
-//   };
-// }
-
 import { createInstance, i18n, Resource } from "i18next";
 import { initReactI18next } from "react-i18next/initReactI18next";
 import resourcesToBackend from "i18next-resources-to-backend";
