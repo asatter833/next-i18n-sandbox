@@ -1,5 +1,5 @@
-import initTranslations from "@/app/i18n/i18n";
-import TranslationsProvider from "@/app/i18n/TranslationProvider";
+import initTranslations from "@/app/i18n";
+import TranslationsProvider from "@/app/TranslationProvider";
 import { ReactNode } from "react";
 
 export interface AboutLayoutProps {

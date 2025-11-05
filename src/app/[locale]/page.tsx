@@ -1,5 +1,5 @@
 import Link from "next/link";
-import initTranslations from "../i18n/i18n";
+import initTranslations from "../i18n";
 
 export type PageProps = {
   params: {

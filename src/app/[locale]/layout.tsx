@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import TranslationsProvider from "../i18n/TranslationProvider";
-import initTranslations from "../i18n/i18n";
 import { AboutLayoutProps } from "./about/layout";
+import initTranslations from "../i18n";
+import TranslationsProvider from "../TranslationProvider";
+import LanguageChanger from "../_components/LanguageChanger";
 import Footer from "./footer";
 
 export const metadata: Metadata = {
@@ -26,7 +27,10 @@ export default async function RootLayout({
         resources={resources}
       >
         <body>
-          <Footer />
+          <div className="text-center p-10">
+            <LanguageChanger />
+            <Footer />
+          </div>
           {children}
         </body>
       </TranslationsProvider>
