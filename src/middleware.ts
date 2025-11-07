@@ -10,23 +10,3 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: "/((?!api|static|.*\\..*|_next).*)",
 };
-
-// export function middleware(request: NextRequest) {
-//   const response = i18nRouter(request, i18nConfig);
-
-//   const pathname = request.nextUrl.pathname;
-//   const hasLocalePrefix = i18nConfig.locales.some((l) =>
-//     pathname.startsWith(`/${l}`)
-//   );
-
-//   // 👇 if no locale in path, reset cookie so defaultLocale is used
-//   if (!hasLocalePrefix) {
-//     response.cookies.set("_i18n_locale", i18nConfig.defaultLocale);
-//   }
-
-//   return response;
-// }
-
-// export const config = {
-//   matcher: "/((?!api|static|.*\\..*|_next).*)",
-// };
