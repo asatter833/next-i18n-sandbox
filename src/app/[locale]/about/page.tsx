@@ -13,7 +13,6 @@ export default function Employee() {
         About ShopKeeper POS System
       </h1>
 
-      {/* HARDCODED STRING 2: Mission Statement */}
       <section className="mb-8">
         <h2 className="text-2xl font-semibold text-gray-800 mb-3">
           Our Mission
