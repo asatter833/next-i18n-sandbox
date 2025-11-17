@@ -1,16 +1,17 @@
 "use client";
 
 import React from "react";
+import { useTranslation } from "react-i18next";
 // import { useTranslation } from "react-i18next";
 export default function Employee() {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
   // const username = "Abdus Satter";
   return (
     <div className="container mx-auto p-8 max-w-4xl bg-gray-50 shadow-xl rounded-xl mt-10">
       {/* HARDCODED STRING 1: Main Title */}
       <h1 className="text-4xl font-extrabold text-indigo-700 mb-6 border-b-2 border-indigo-200 pb-2">
-        About ShopKeeper POS System
+        {t("about_header")}
       </h1>
 
       <section className="mb-8">

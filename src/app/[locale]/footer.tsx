@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <div className="text-center p-10">
       <ul className="inline-flex gap-2">
-        {locales.map((locale) => (
+        {locales.map((locale: string) => (
           <li className="uppercase" key={locale}>
             <Link href={getPathnameWithLocale(locale)} className="uppercase">
               {locale}
